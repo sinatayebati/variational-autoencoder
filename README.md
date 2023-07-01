@@ -1,6 +1,6 @@
 # variational-autoencoder
 
-A <a href="https://pyro.ai/examples/vae.html">Pyro/Pytorch</a> implementation of probabilistic variational autoencoders for MNIST.
+A Pyro/Pytorch implementation of variational autoencoders for MNIST.
 
 IN order to be able to use the decoder of an autoencoder for generative purpose, we have to be sure that the latent space is regular enough. One possible solution to obtain such regularity is to introduce explicit regularisation during the training process. Thus, a variational autoencoder can be defined as being an autoencoder whose training is regularised to avoid overfitting and ensure that the latent space has good properties that enable generative process.
 
@@ -13,7 +13,9 @@ Just as a standard autoencoder, a variational autoencoder is an architecture com
 
 <img src="vae-introductory-notebook/vae.png">
 
-This repository represents a generative model which utilizes VAE impleneted with Pyro deep probabilistic language to regenrate the MNIST images samples pulled from a distribution over the latent space and then compare the extracted features and generated images with the grand truth.
+This repository represents a generative model which utilizes VAE impleneted with Pyro deep probabilistic language to encode and regenrate the MNIST images using samples pulled from a distribution over the latent space and then compares the generated images with the grand truth. Also a comparison between the VAE implementation in Pytorch and Pyro is included.
+
+- Note: [vae-introductory-notebook] folder includes a notebook only for demonstrating the construction of encoder, decoder, guide, and model for Pyro implementation. It does not serve as a main script for running the model.
 
 <img src="results/pyro/reconstruction_9.png">
 <img src="results/pyro/reconstruction_8.png">
