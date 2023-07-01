@@ -23,3 +23,35 @@ This repository represents a generative model which utilizes VAE impleneted with
 <img src="results/pyro/reconstruction_4.png">
 
 <img src="vae_results/VAE_embedding.png">
+
+
+# Usage and Requirements
+
+This repository has been tested on the following environemt:
+
+```
+python == 3.10.11
+pyro == 1.8.4
+pytorch == 2.0.0
+scikit-learn == 1.2.2
+pandas == 2.0.1
+numpy == 1.24.3
+matplotlib == 3.7.1
+seaborn == 0.12.2
+graphviz == 0.20.1
+
+```
+
+- Clone the repository in your local machine
+
+- If you seek to use a virtual environment and pip package manager, create and activate your virtual env, and install packages running the following:
+```
+python3.10.11 -m venv .pyroenv
+source pyroenv/bin/activate
+pip install -r requirements.txt
+```
+
+- If you seek to use conda environment and conda package manager, create  your conda env and install packages running the following in terminal:
+```
+conda env create -f environment.yml
+```
